@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+3&display=swap');
+
 
 body{
     background-color: #1E1E1B;
@@ -17,9 +18,32 @@ body{
     color: beige;
 }
 
-.content{
-    width:auto;
-    margin: 10px 20px 10px 20px;
+.text-box{
+    display: inline-block;
+    width: 65%;
     border: 3px solid beige;
+    border-radius: 25px;
+    color: beige;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.img-right{
+    display: inline-block;
+    width: 32.5%;
+    aspect-ratio: 1 / 1;
+    border: 3px solid beige;
+    border-radius: 25px;
+}
+
+.img-right img{
+    width: 100%;
+    height: 100%;
     border-radius: 25px;
 }
