@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body{
+    background-color: #1E1E1B;
+}
+
+.heading{
+    background-color: rgba(1, 1, 1, 0);
+    border: 3px solid beige;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.heading h1{
+    font-family: 'Playfair Display', monospace;
+    font-size: 50px;
+    color: beige;
+}
+
+.content{
+    width:auto;
+    margin: 10px 20px 10px 20px;
+    border: 3px solid beige;
+    border-radius: 25px;
+}
