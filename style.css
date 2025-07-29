@@ -21,6 +21,7 @@ body{
 .text-box{
     display: inline-block;
     width: 64%;
+    text-align: justify;
     border: 3px solid beige;
     border-radius: 25px;
     color: beige;
@@ -28,7 +29,12 @@ body{
 }
 
 .text-box h2{
-    font-size: 20px;
+    font-size: 30px;
+}
+
+.text-box p{
+    font-family: Gill Sans;
+    font-size: 25px;
 }
 
 .flex-container{
@@ -70,7 +76,7 @@ body{
     font-size: 25px;
     margin: 0 10px 0 10px;
 
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
 }
 
 .menu a:hover{
