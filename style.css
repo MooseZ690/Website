@@ -1,97 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+3&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lora&display=swap');
 
-
-body{
-    background-color: #1E1E1B;
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
-.heading{
-    background-color: rgba(1, 1, 1, 0);
-    border: 3px solid beige;
-    border-radius: 25px;
-    text-align: center;
-}
-
-.heading h1{
-    font-family: 'Playfair Display', monospace;
-    font-size: 60px;
-    color: beige;
-}
-
-.text-box{
-    display: inline-block;
-    width: 64%;
-    text-align: justify;
-    border: 3px solid beige;
-    border-radius: 25px;
-    color: beige;
-    padding: 10px;
-}
-
-.text-box h2{
-    font-size: 30px;
-}
-
-.text-box p{
-    font-family: Gill Sans;
-    font-size: 25px;
-}
-
-.flex-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
+.title-container{
     width: 100%;
-    margin: 25px 0 25px 0;
+    color: black;
 }
 
-.img-right{
-    display: inline-block;
-    width: 32.5%;
-    aspect-ratio: 1 / 1;
-    border: 3px solid beige;
-    border-radius: 25px;
-}
-
-.img-right img{
+.title-container img{
     width: 100%;
-    height: 100%;
-    border-radius: 25px;
-    margin-bottom: -5px;
+    margin: 0;
 }
 
-.menu{
+.top-beans{
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 60px;
+    font-family: 'Lora';
+    margin: 0;
+    padding: 5px;
     display: flex;
-    justify-content: center;
-    margin: 25px 0 0 0;
+    align-items: center;
+
+}
+
+.top-beans h1{
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+    background-color: rgb(40, 40, 40);
     height: 30px;
-    padding: 10px;
+    justify-content: center;
+    align-items: center;  
 }
 
-.menu a{
+.navbar a{
     text-decoration: none;
-    color: beige;
-    font-family: 'Playfair display', monospace;
-    text-align: center;
-    font-size: 25px;
-    margin: 0 10px 0 10px;
-
-    transition: all 0.35s ease;
+    color: white;
+    font-size: 19px;
+    padding: 0 5px 0 5px;
+    transition: all 0.3s ease;  
 }
 
-.menu a:hover{
-    transform: scale(1.2);
-    margin-left: 2px;
-    margin-right: 2px;
+.navbar a:hover{
+  transform: scale(1.3);
+  margin: 0 10px 0 10px;
 }
 
-.big-img{
-    width: 100%;
-    border: 3px solid beige;
-    border-radius: 25px;
-    aspect-ratio: 1 / 1;
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: white;
 }
 
-.big-img img{
-    width: 100%;
+.title-bar{
+    width: 100%
+
 }
