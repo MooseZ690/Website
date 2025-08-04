@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+3&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lora&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Mako&display=swap');
 
 html, body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  scroll-padding-top: 30px;
   font-family: 'Source Sans 3', sans-serif;
   background-color: white;
   color: black;
@@ -28,8 +30,9 @@ html, body {
 
 .title-container h1{
     color: white;
-    font-family: Impact;
+    font-family: 'Mako';
     font-size: 100px;
+    font-weight: bolder;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -44,6 +47,7 @@ html, body {
   display: flex;
   align-items: center;
   font-family: 'Lora', serif;
+  font-weight: bold;
 }
 
 .top-beans h1 {
@@ -89,24 +93,30 @@ html, body {
     width: 100%
 }
 
-.spacer{
-    height: 50px;
+.spacer {
     background-color: rgb(40, 40, 40);
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px;
-}
-
-.spacer p{
-    color: white;
+    gap: 30px;
+    padding: 10px;
+    height: 50px;
 }
 
 .spacer h1{
+    display: inline-block;
     color: white;
     margin: 0;
     margin-left: 20px;
     font-size: 40px;
-    font-family: Helvetica !important;
+    font-family: Helvetica !important; *HELVETICA DOESNT WORKKKK*
+}
+
+.spacer a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 10px;
 }
 
 .sidebar{
