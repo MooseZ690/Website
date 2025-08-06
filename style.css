@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+3&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lora&display=swap');  
-@import url('https://fonts.googleapis.com/css2?family=Mako&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 html, body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  scroll-padding-top: 30px;
+  scroll-padding-top: 25px;
   font-family: 'Source Sans 3', sans-serif;
   background-color: white;
   color: black;
@@ -30,13 +30,26 @@ html, body {
 
 .title-container h1{
     color: white;
-    font-family: 'Mako';
+    font-family: 'Archivo Black';
+    font-weight: 900;
     font-size: 100px;
-    font-weight: bolder;
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.title-container em{
+  margin-right: 60px;
+}
+
+.title-container p{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .top-beans {
