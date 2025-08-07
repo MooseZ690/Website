@@ -124,7 +124,7 @@ html, body {
     margin: 0;
     margin-left: 20px;
     font-size: 40px;
-    font-family: Helvetica !important; *HELVETICA DOESNT WORKKKK*
+    font-family: Helvetica !important;
 }
 
 .spacer a{
@@ -159,7 +159,7 @@ html, body {
 }
 
 .main-content p{
-    font-size: 20px;
+    font-size: 28px;
     font-family: Helvetica;
     color: white;
 }
