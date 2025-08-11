@@ -20,7 +20,15 @@ html, body{
     margin: 0;
     padding: 0;
     overflow: hidden;
+    position: relative;
     text-align: center !important;
+}
+
+#rocket{
+  width: 40%;
+  position: absolute;
+  right: -2000px;;
+  top: 0%;
 }
 
 .title-container img{
@@ -37,7 +45,7 @@ html, body{
     font-size: 100px;
     position: absolute;
     left: 25%;
-    top: 30%;
+    top: 20%;
 }
 
 .title-container em{
@@ -59,7 +67,8 @@ html, body{
   color: white;
   display: flex;
   align-items: center;
-  font-family: 'Inter' !important;
+  font-family: 'Inter';
+  font-weight: 700;
   font-weight: bold;
 }
 
@@ -128,7 +137,7 @@ html, body{
     margin: 0;
     margin-left: 20px;
     font-size: 40px;
-    font-family: Helvetica !important; *HELVETICA DOESNT WORKKKK*
+    font-family: Helvetica !important;
 }
 
 .spacer a{
@@ -147,7 +156,7 @@ html, body{
     width: 100%;
     margin: 0;
     overflow: hidden;
-  border-radius: 25px;
+    border-radius: 25px 25px 0px 25px;
 }
 
 .main-content{
@@ -163,7 +172,7 @@ html, body{
 }
 
 .main-content p{
-    font-size: 20px;
+    font-size: 28px;
     font-family: Helvetica;
     color: white;
 }

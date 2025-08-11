@@ -25,6 +25,7 @@
         <img src="title_image.jpeg">
         <h1 id="title">Climate Change</h1>
         <p id="quote"><em>“The world is reaching the tipping point beyond which climate change may become irreversible. If this happens, we risk denying<br>present and future generations the right to a healthy and sustainable planet - the whole of humanity stands to lose.”<br></em>-Kofi Annan, former UN General-Secretary</p>
+        <img id="rocket" src="saturnV.png" alt="rocket">
     </div>
 
     <!-- SECTION 2 CAUSES -->
@@ -128,8 +129,13 @@
     const quote = document.getElementById('quote');
     window.addEventListener('scroll', () => {
         const scrollY = window.scrollY;
-        quote.style.transform = `translateY(${-scrollY * 2.25}px)`;
+        quote.style.transform = `translateY(${-scrollY * 2}px)`;
         quote.style.opacity = Math.max(0, 1 - scrollY / 300);
+  });
+    const rocket = document.getElementById('rocket');
+    window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+        rocket.style.transform = `translateX(${-scrollY * 20}px)`;
   });
 </script>
 </body>
