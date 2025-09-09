@@ -9,10 +9,11 @@
 <body>
     
     <!-- SECTION 1 TITLE -->
-
+    </div>
     <div class="top-beans">
-        <h1 id="section1">11DTP Project</h1>
-        <a href='sources.html'>Sources</a>
+        <marquee width: 100% behavior="scroll" direction="left" scrollamount="7">
+        <pre>↑1.60°C temp preindustrial-now         ↑22 cm sea lvl 1900-2023         ↑50% renewables growth 2023                  ↑0.6% CO₂ emissions 2022         ↑1.60°C temp preindustrial-now         ↑22 cm sea lvl 1900-2023         ↑50% renewables growth 2023         ↑0.6% CO₂ emissions 2022</pre>
+        </marquee>
     </div>
     <div class="navbar">
         <a href="#section1">Home</a>
@@ -25,7 +26,6 @@
         <img src="title_image.jpeg">
         <h1 id="title">Climate Change</h1>
         <p id="quote"><em>“The world is reaching the tipping point beyond which climate change may become irreversible. If this happens, we risk denying<br>present and future generations the right to a healthy and sustainable planet - the whole of humanity stands to lose.”<br></em>-Kofi Annan, former UN General-Secretary</p>
-        <img id="rocket" src="cartman.png" alt="rocket">
     </div>
 
     <!-- SECTION 2 CAUSES -->
@@ -54,21 +54,22 @@
 
     <div class="spacer">
             <h1 id="section3">ACTIONS</h1> <a href="#section1">Top ↑</a> <a href="#section4">Next ↓</a>
-        </div>
+    </div>
     <div class="grid-container-reversed">
         <div class="sidebar">
             <img src="train.jpg" alt="A train">
         </div>
         <div class="main-content">
             <h2>Public transport</h2>
-            <p>This is the actions bit</p>
+            <p>Public transport is an effective measure to mitigate emissions because it reduces greenhouse gas emissions per passenger by 2/3 per kilometer compared to private vehicles, according to the World Resources Institute. This makes them a key tool to combating climate change. By shifting more trips from private cars to public transit, cities can lower overall fossil fuel consumption, reduce traffic congestion, and improve air quality especially in low-income communities disproportionately affected by pollution. Additionally, expanding and electrifying public transport fleets such as buses powered by renewable energy further decreases carbon footprints and supports equitable, sustainable urban development. This makes public transport an important, cost-effective strategy to meet global climate goals while enhancing access to jobs, education, and services.</p>
         </div>
         <div class="sidebar">
             <img src="nuclear.jpeg" alt="Nuclear reactors">
         </div>
         <div class="main-content">
             <h2>Nuclear power - governmental actions</h2>
-            <p>Nuclear energy protects air quality by producing massive amounts of carbon-free electricity. While it has been effectively demonised in some countries due to events such as Chernobyl and Fukushima, nuclear power only produces steam and a minute amount of waste products. Approximately </p>
+            <p>Nuclear energy protects air quality by producing massive amounts of carbon-free electricity. While it has been effectively demonised in some countries due to events such as Chernobyl and Fukushima, nuclear power only produces steam and a minute amount of waste products. Producing 1 terawatt of energy from coal produces 0.9 to 1 million tonnes of CO₂, whereas nuclear power plants emit no carbon, just tiny amounts of nuclear waste, some of which can be reprocessed as fuel, the rest can be stored safely in near-surface dry cask storage.* </p>
+            <h6>High-level nuclear waste makes up just 0.25% of the total nuclear waste pool on earth, typically disposed of in stable geological formations, several hundred meters below the surface. <a href=https://decarbonization.visualcapitalist.com/visualizing-all-the-nuclear-waste-in-the-world>Source</a> </h6>
         </div>
     </div>
 
@@ -129,13 +130,8 @@
     const quote = document.getElementById('quote');
     window.addEventListener('scroll', () => {
         const scrollY = window.scrollY;
-        quote.style.transform = `translateY(${-scrollY * 2}px)`;
+        quote.style.transform = `translate(-50%, ${-scrollY * 1.75}px)`;
         quote.style.opacity = Math.max(0, 1 - scrollY / 300);
-  });
-    const rocket = document.getElementById('rocket');
-    window.addEventListener('scroll', () => {
-        const scrollY = window.scrollY;
-        rocket.style.transform = `translateX(${-scrollY * 20}px)`;
   });
 </script>
 </body>
