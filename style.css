@@ -7,11 +7,10 @@ html, body{
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  scroll-padding-top: 25px;
+  scroll-padding-top: 50px;
   font-family: 'Source Sans 3', sans-serif;
   background-color: white;
   color: black;
-  user-select: none;
 }
 
 
@@ -28,18 +27,22 @@ html, body{
 .title-container img{
     width: 100%;
     margin: 0;
+    height: 100vh;
     object-fit: cover;
     display: block;
 }
 
-.title-container h1{
+.title-container h1 {
     color: white;
     font-family: 'Archivo Black';
-    font-weight: 900;
-    font-size: 6vw;
+    font-weight: 700;
+    font-size: calc(2vw + 35px);
     position: absolute;
-    left: 25%;
-    top: 20%;
+    top: 50%;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    margin: 0;
 }
 
 .title-container em{
@@ -81,7 +84,7 @@ html, body{
     align-items: center;
     font-family: 'Inter';
     font-weight: 500;
-    background-color: rgb(40, 40, 40);
+    background-color: rgb(60, 60, 60);
 }
 
 .navbar a{
@@ -99,12 +102,14 @@ html, body{
 
 .grid-container{
     display: grid;
+    padding: 50px;
     grid-template-columns: 2fr 1fr;
     background-color: white;
 }
 
 .grid-container-reversed{
     display: grid;
+    padding: 50px;
     grid-template-columns: 1fr 2fr;
     background-color: white;
 }
@@ -114,13 +119,13 @@ html, body{
 }
 
 .spacer{
-    background-color: rgb(40, 40, 40);
+    background-color: rgb(60, 60, 60);
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
     padding: 1vh;
-    height: auto;
+    height: 3.5;
 }
 
 .spacer h1{
@@ -128,7 +133,7 @@ html, body{
     color: white;
     margin: 0;
     margin-left: 20px;
-    font-size: 3.75vw;
+    font-size: 3vw;
     font-family: Helvetica !important;
 }
 
@@ -140,13 +145,12 @@ html, body{
 }
 
 .sidebar{
-  background-color: black;
+  background-color: white;
   padding: 30px;
 }
 
 .sidebar img{
     width: 100%;
-    margin: 0;
     overflow: hidden;
     aspect-ratio: 1 / 1;
     object-fit: cover;
@@ -154,47 +158,33 @@ html, body{
 }
 
 .main-content{
-  padding: 30px;
-  background-color: black;
+  padding: 3vw;
+  background-color: white;
 }
 
 .main-content h2{
     margin: 0;
     font-family: garamond;
-    font-size: 3vw;
-    color: white;
+    font-size: 2vw;
+    color: black;
 }
 
 .main-content h6{
-    font-size: 1vw;
+    font-size: 0.8vw;
     font-family: Helvetica;
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
 .main-content p{
-    font-size: 1.5vw;
+    font-size: calc(0.6vw + 10px);
     font-family: Helvetica;
-    color: white;
-}
-
-.sources-container{
-  padding: 30px;
-  color: white;
-  font-size: 20px;
-  height: 900px;
-  margin: 20px;
-  border-radius: 25px;
-  background-color: rgb(40, 40, 40)
-}
-
-.sources-container h1{
-  font-size: 60px;
+    color: black;
 }
 
 .footer{
   width: 100%;
-  background-color: rgb(40, 40, 40);
+  background-color: rgb(60, 60, 60);
   display: flex;
   align-items: center;
   justify-content: center;
