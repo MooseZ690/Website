@@ -3,14 +3,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
+
 html, body{
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  scroll-padding-top: 50px;
+  scroll-padding-top: 0px;
   font-family: 'Source Sans 3', sans-serif;
   background-color: white;
   color: black;
+  user-select: none;
 }
 
 
@@ -60,9 +62,9 @@ html, body{
 
 .top-beans{
   width: 100%;
-  height: 5px;
-  background-color: black;
-  color: white;
+  height: 10px;
+  background-color: white;
+  color: black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,26 +72,30 @@ html, body{
   font-weight: 700;
   font-size: 0px;
   font-weight: bold;
-  transform: all 0.35s ease;
+  transition: all 0.3s ease;
 }
 
 .top-beans:hover{
   height: 40px;
   font-size: 14px;
+  transition: all 0.3s ease;
 }
 
 .navbar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Inter';
-    font-weight: 500;
-    background-color: rgb(60, 60, 60);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 1vh;
+  background-color: white;
 }
 
 .navbar a{
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 19px;
   padding: 0 5px;
   transition: transform 0.3s ease;
@@ -133,7 +139,7 @@ html, body{
     color: white;
     margin: 0;
     margin-left: 20px;
-    font-size: 3vw;
+    font-size: 2vw;
     font-family: Helvetica !important;
 }
 
@@ -150,16 +156,20 @@ html, body{
 }
 
 .sidebar img{
-    width: 100%;
+    width: 60%;
+    margin: auto;
+    margin-left: 6vw;
     overflow: hidden;
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    border-radius: 25px 25px 0px 25px;
+    border-radius: 25px;
 }
 
 .main-content{
   padding: 3vw;
   background-color: white;
+  border-left: 0.2vw solid black;
+
 }
 
 .main-content h2{
@@ -198,4 +208,10 @@ html, body{
 .footer p{
   margin: 0;
   color: white;
+}
+
+.content-spacer{
+  height: 200px;
+  width: 100%;
+  background-color: white;
 }
