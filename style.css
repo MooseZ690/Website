@@ -8,7 +8,6 @@ html, body{
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  scroll-padding-top: 0px;
   font-family: 'Source Sans 3', sans-serif;
   background-color: white;
   color: black;
@@ -53,9 +52,9 @@ html, body{
 
 .title-container p{
   color: white;
-  font-size: 1.5vw;
+  font-size: calc(0.5vw + 11px);
   position: absolute;
-  top: 65%;
+  top: 55%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -102,7 +101,7 @@ html, body{
 }
 
 .navbar a:hover{
-  transform: scale(1.2);
+  transform: scale(1.125);
 }
 
 
@@ -165,6 +164,7 @@ html, body{
     border-radius: 25px;
 }
 
+
 .main-content{
   padding: 3vw;
   background-color: white;
@@ -174,8 +174,8 @@ html, body{
 
 .main-content h2{
     margin: 0;
-    font-family: garamond;
-    font-size: 2vw;
+    font-size: calc(1.2vw + 15px);
+    font-weight: 900;
     color: black;
 }
 
@@ -211,7 +211,7 @@ html, body{
 }
 
 .content-spacer{
-  height: 200px;
+  height: 140px;
   width: 100%;
   background-color: white;
 }
